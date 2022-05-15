@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search bar</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <form class="bigRectangle" action="" method="get" >
+      <label>
+        <img id="bigIcon" src="./images/Search.svg">
+        <input 
+          class="bigText"
+          type="text" 
+          name="search" 
+          data-qa="big" 
+          data-qa="keypress" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+    <form class="smallRectangle" action="" method="get" >
+      <label>
+        <img id="smallIcon" src="./images/Search.svg">
+        <input 
+          class="smallText"
+          type="text" 
+          name="search" 
+          data-qa="small" 
+          placeholder="Try &quot;Los Angeles&quot;"
+        >
+      </label>
+    </form>
+  </body>
+</html>

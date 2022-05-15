@@ -1,0 +1,23 @@
+@use '../utils/mixins';
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0 50px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+
+  &__logo {
+    display: inline-block;
+    @include mixins.square(40px);
+    margin-top: 10px;
+  }
+}

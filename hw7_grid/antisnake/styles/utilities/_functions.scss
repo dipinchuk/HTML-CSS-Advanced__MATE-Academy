@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+
+@each $number, $color in $colors {
+  .item--#{$number}{
+    background-color: $color;
+  }
+}

@@ -1,0 +1,27 @@
+@use '../utils/extends';
+@use '../utils/mixins';
+@use '../utils/variables' as *;
+
+.stars {
+  display: flex;
+  column-gap: 4px;
+
+  &__star {
+    @include mixins.square(16px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+    
+  @for $index from 0 through $stars-number - 1 {
+    &--#{$index} &__star:nth-child(n + #{$index +1 }) {
+      background-image: url(./images/star.svg);
+    }
+  }
+
+  @for $index from 1 through $stars-number {
+    &--#{$index} &__star:nth-child(-n + #{$index}) {
+      background-image: url(./images/star-active.svg);
+    }
+  }
+}

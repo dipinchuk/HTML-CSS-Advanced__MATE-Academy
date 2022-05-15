@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin:auto;
+  width: 200px;
+  font-family: Roboto;
+
+  border: 1px solid #F3F3F3;
+  padding: 32px 16px 16px;
+}

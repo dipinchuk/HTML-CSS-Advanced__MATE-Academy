@@ -1,0 +1,9 @@
+@use '../utils/extends';
+
+.page {
+  @extend %flex_center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-y: scroll;
+}

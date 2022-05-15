@@ -1,0 +1,8 @@
+.container__photo {
+  background-image: url(../../images/imac.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat ;
+  Width: 160px;
+  Height: 134px;
+  margin-bottom: 40px;
+}

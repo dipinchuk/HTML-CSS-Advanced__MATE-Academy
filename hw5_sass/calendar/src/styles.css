@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes block-up {
+  100% {
+    background-color: pink;
+    transform: translateY(-20px);
+  }
+}
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block:hover {
+  cursor: pointer;
+  animation-name: block-up;
+  animation-duration: 500ms;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1px;
+  width: 726px;
+  padding: 10px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.block--1::before {
+  content: "1";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--2::before {
+  content: "2";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--3::before {
+  content: "3";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--4::before {
+  content: "4";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--5::before {
+  content: "5";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--6::before {
+  content: "6";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--7::before {
+  content: "7";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--8::before {
+  content: "8";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--9::before {
+  content: "9";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--10::before {
+  content: "10";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--11::before {
+  content: "11";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--12::before {
+  content: "12";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--13::before {
+  content: "13";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--14::before {
+  content: "14";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--15::before {
+  content: "15";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--16::before {
+  content: "16";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--17::before {
+  content: "17";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--18::before {
+  content: "18";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--19::before {
+  content: "19";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--20::before {
+  content: "20";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--21::before {
+  content: "21";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--22::before {
+  content: "22";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--23::before {
+  content: "23";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--24::before {
+  content: "24";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--25::before {
+  content: "25";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--26::before {
+  content: "26";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--27::before {
+  content: "27";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--28::before {
+  content: "28";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--29::before {
+  content: "29";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--30::before {
+  content: "30";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.block--31::before {
+  content: "31";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.start-day--mon .block--1 {
+  margin-left: 0px;
+}
+
+.start-day--tue .block--1 {
+  margin-left: 101px;
+}
+
+.start-day--wed .block--1 {
+  margin-left: 202px;
+}
+
+.start-day--thu .block--1 {
+  margin-left: 303px;
+}
+
+.start-day--fri .block--1 {
+  margin-left: 404px;
+}
+
+.start-day--sat .block--1 {
+  margin-left: 505px;
+}
+
+.start-day--sun .block--1 {
+  margin-left: 606px;
+}
+
+.month-length--28 .block:nth-last-child(-n+3) {
+  visibility: hidden;
+}
+
+.month-length--29 .block:nth-last-child(-n+2) {
+  visibility: hidden;
+}
+
+.month-length--30 .block:nth-last-child(-n+1) {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

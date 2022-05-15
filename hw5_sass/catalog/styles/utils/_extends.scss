@@ -1,0 +1,11 @@
+%flex_row_space-btwn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+%flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

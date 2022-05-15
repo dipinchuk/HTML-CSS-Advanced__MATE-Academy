@@ -1,0 +1,25 @@
+.container__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  font-weight: 500;
+  font-size: 12px;
+  color: #060B35;
+  height: 36px;
+  width: 100%;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #616070;
+
+}
+
+.sum {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  color: #060B35;
+}

@@ -1,0 +1,21 @@
+body {
+    font-weight: 600;
+}
+
+.group {
+    display: block;
+    margin-bottom: 20px;    
+}
+
+.form-field {
+    padding-top: 10px;
+}
+
+.button {
+   border-radius: 5px;
+   font-weight: 600;
+   border-color: #eee;
+   background-color: white;
+   border-style: solid;
+   color: grey;
+}

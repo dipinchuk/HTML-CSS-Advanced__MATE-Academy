@@ -1,0 +1,18 @@
+.container__buy-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background: #00ACDC;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.container__buy-btn:hover {
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  color: #00ACDC;
+}

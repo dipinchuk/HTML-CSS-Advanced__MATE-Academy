@@ -1,0 +1,8 @@
+@use "../utilities/mixins";
+@use "../utilities/extends";
+
+.center-circle {
+  @extend %circles;
+  @include mixins.circle(20px, 50%);
+  background-color: rgb(82, 82, 82);
+}

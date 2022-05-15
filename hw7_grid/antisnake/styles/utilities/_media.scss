@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+@media (min-width: ($size *2)) {
+  .grid{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: ($size *3)) {
+  .grid{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../utilities/mixins';
+@use '../utilities/variables' as *;
+@use '../utilities/keyframes';
+
+.block {
+  @include mixins.square($block-size);
+  background-color: #eee;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:hover {
+    cursor: pointer;
+    animation-name: block-up;
+    animation-duration: 500ms;
+  }
+}

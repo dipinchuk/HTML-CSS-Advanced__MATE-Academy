@@ -1,0 +1,25 @@
+@use '../utilities/variables' as *;
+
+@for $index from 1 to $month-length + 1 {
+  .block--#{$index}::before {
+    content: '#{$index}';
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+}
+
+@each $name, $number in $week {
+  .start-day--#{$name} {
+    .block--1 {
+      margin-left: $block-size*$number + $number * $gap-size;
+    }
+  }
+}
+
+@for $var from 28 to $month-length {
+  .month-length--#{$var} {
+    .block:nth-last-child(-n + #{$month-length - $var}){
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use '../utilities/variables' as *;
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: $gap-size;
+  width: $block-size*$column-number + (($column-number - 1) * $gap-size + $padding-size*2); 
+  padding: $padding-size;
+}

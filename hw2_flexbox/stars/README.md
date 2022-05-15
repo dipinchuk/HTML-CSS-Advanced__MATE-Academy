@@ -1,0 +1,26 @@
+# Stars
+
+## The task
+Implement the [`stars` block](https://www.figma.com/file/EIBkG1dy1jnK88YPO34Qir/Moyo-Catalog-updated) used in card and catalog.
+You DON'T need to implement the card now, just the stars block.
+
+![Stars](./references/stars.png)
+___
+- You can find star images in `images` folder
+- Reset browser's default `margin`
+- Implement 6 blocks with `stars` class
+  - The first should have `stars--0` class
+  - The next 5 blocks should have an extra class `stars--1`, `stars--2` ... `stars--5` (one extra class per block)
+- Each block should have exactly 5 stars styled as in the card design
+- The number of active (yellow) stars should be different for all 6 blocks depending on modifier class
+  - The first block (with just `stars` class) don't have active stars
+  - The other 5 blocks have exactly N fisrt stars active where N is a numbers in an additional css class (modifier) `stars--N`
+  - Add images in CSS, instead of using the HTML "img" or "svg" tags
+- Each star in a block should have a class `stars__star` and no extra classes or inline styles
+  - The star size is fixed (see in the design)
+  - The distance between the stars is also fixed
+  - Use `display: flex` for the `stars` block to avoid an issue with extra spaces between individual stars
+
+### Tips & Hints
+- Check the design again. See the difference in size between star image and its container?
+- There`s no need to add vertical margins between rows of stars.

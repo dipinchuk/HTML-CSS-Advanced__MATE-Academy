@@ -1,0 +1,74 @@
+@use '../utils/extends';
+
+.container {
+  @extend %flex_center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 408px;
+  width: 200px;
+  border: 1px solid #F3F3F3;
+  padding: 32px 16px 16px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+
+  &__photo {
+    background-image: url(./images/imac.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat ;
+    width: 160px;
+    height: 134px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    line-height: 18px;
+    color: #060B35;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  &__code {
+    text-align: left;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    color: #616070;
+    margin-bottom: 16px;
+  }
+
+  &__feedback {
+    @extend %flex_row_space-btwn;
+    font-weight: 400;
+    font-size: 10px;
+    color: #060B35;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    @extend %flex_row_space-btwn;
+    height: 36px;
+    width: 100%;
+  }
+
+  &__buy-btn {
+    @extend %flex_center;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background: #00ACDC;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  &__buy-btn:hover {
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    color: #00ACDC;
+  }
+}

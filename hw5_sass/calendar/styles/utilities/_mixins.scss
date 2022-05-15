@@ -1,0 +1,6 @@
+@use '../utilities/variables' as *;
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}

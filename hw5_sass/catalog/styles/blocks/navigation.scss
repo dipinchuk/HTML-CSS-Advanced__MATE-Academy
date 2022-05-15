@@ -1,0 +1,32 @@
+@use '../utils/extends';
+@use '../utils/variables' as *;
+
+.nav{
+  &__box {
+    @extend %flex_center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    height: $container-height;
+
+    &--is-active::after {
+      position: absolute;
+      height: $line-height;
+      width: 37px;
+      top: $container-height - $line-height;
+      content: attr(data-descr);
+      border-radius: 8px;
+      background: #00ACDC;
+    }
+  }
+
+  &__box--is-active, &__box:hover {
+    color: #00ACDC;   
+  }
+
+  &__link {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
