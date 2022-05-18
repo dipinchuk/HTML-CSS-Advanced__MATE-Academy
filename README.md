@@ -1,1 +1,1 @@
-# HTML-CSS-Advanced__MATE-Academy
+# Completed tasks from repository of Mate Academy in HTML&CSS.
